@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://carbonfootprinting1608.herokuapp.com/script.js"></script>
+    <title>Update Expense</title>
+</head>
+<body>
+    <div>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="https://carbonfootprinting1608.herokuapp.com">Carbon Footprint</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <h5 class="nav-link" id="name1"></h5>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://carbonfootprinting1608.herokuapp.com/success.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://carbonfootprinting1608.herokuapp.com">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                    <div class="panel-group" style="padding-top: 12px;">
+                        <div class="panel panel-primary" >
+                            <div class="panel-heading"><h1>Update Expense Here</h1></div>
+                            <div class="panel-body">
+                                <form action="" method='post'>
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Enter Card Number to update" class="form-control" id="cardNumber">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" placeholder="Enter new shopping expense" class="form-control" id="shoppingExpense" >
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" placeholder="Enter new food expense" class="form-control" id="foodExpense">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" placeholder="Enter new travel expense" class="form-control" id="travelExpense">
+                                    </div>
+                                    <button type="button" id="update_button"  onclick="update_details();" class="btn btn-info">Update Expense</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
